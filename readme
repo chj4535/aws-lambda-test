@@ -1,0 +1,12 @@
+-ChoiTest1 function + api gateway(option : open)
+
+API endpoint : ~.amazonaws.com
+api gateway : /choi/ChoiTest1
+body : {"key1":"test"}
+
+curl -X POST ~.amazonaws.com/choi/ChoiTest1 -d '{"key1":"test"}'
+(importent 'body' not "body")
+
+if you set api gateway(option : api-key)
+curl -X POST ~.amazonaws.com/choi/ChoiTest1 -d '{"key1":"test"}' -H "x-api-key: api-key"
+
